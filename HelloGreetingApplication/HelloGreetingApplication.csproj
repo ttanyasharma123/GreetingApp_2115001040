@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- NLog Packages -->
+		<PackageReference Include="NLog" Version="5.4.0" />
+		<PackageReference Include="NLog.Extensions.Logging" Version="5.4.0" />
+		<PackageReference Include="NLog.Web.AspNetCore" Version="5.4.0" />
+
+		<!-- Swashbuckle for Swagger -->
+		
+	<PackageReference Include="Swashbuckle.AspNetCore" Version="7.3.1" />
+		
+
+	</ItemGroup>
+
+	<ItemGroup>
+		<!-- Reference Business Layer Project -->
+		<ProjectReference Include="..\BusinessLayerr\BusinessLayerr.csproj" />
+		<ProjectReference Include="..\RepositoryLayerr\RepositoryLayerr.csproj" />
+	</ItemGroup>
+
+</Project>

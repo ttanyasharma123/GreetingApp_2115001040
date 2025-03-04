@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tanya\\source\\repos\\HelloGreetingApplication\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{56EB5281-9AF1-4301-B237-246C731AC975}|HelloGreetingApplication\\HelloGreetingApplication.csproj|c:\\users\\tanya\\source\\repos\\hellogreetingapplication\\hellogreetingapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56EB5281-9AF1-4301-B237-246C731AC975}|HelloGreetingApplication\\HelloGreetingApplication.csproj|solutionrelative:hellogreetingapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56EB5281-9AF1-4301-B237-246C731AC975}|HelloGreetingApplication\\HelloGreetingApplication.csproj|c:\\users\\tanya\\source\\repos\\hellogreetingapplication\\hellogreetingapplication\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{56EB5281-9AF1-4301-B237-246C731AC975}|HelloGreetingApplication\\HelloGreetingApplication.csproj|solutionrelative:hellogreetingapplication\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56EB5281-9AF1-4301-B237-246C731AC975}|HelloGreetingApplication\\HelloGreetingApplication.csproj|c:\\users\\tanya\\source\\repos\\hellogreetingapplication\\hellogreetingapplication\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{56EB5281-9AF1-4301-B237-246C731AC975}|HelloGreetingApplication\\HelloGreetingApplication.csproj|solutionrelative:hellogreetingapplication\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56EB5281-9AF1-4301-B237-246C731AC975}|HelloGreetingApplication\\HelloGreetingApplication.csproj|c:\\users\\tanya\\source\\repos\\hellogreetingapplication\\hellogreetingapplication\\controllers\\hellogreetingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56EB5281-9AF1-4301-B237-246C731AC975}|HelloGreetingApplication\\HelloGreetingApplication.csproj|solutionrelative:hellogreetingapplication\\controllers\\hellogreetingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56EB5281-9AF1-4301-B237-246C731AC975}|HelloGreetingApplication\\HelloGreetingApplication.csproj|c:\\users\\tanya\\source\\repos\\hellogreetingapplication\\hellogreetingapplication\\hellogreetingapplication.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{56EB5281-9AF1-4301-B237-246C731AC975}|HelloGreetingApplication\\HelloGreetingApplication.csproj|solutionrelative:hellogreetingapplication\\hellogreetingapplication.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56EB5281-9AF1-4301-B237-246C731AC975}|HelloGreetingApplication\\HelloGreetingApplication.csproj|c:\\users\\tanya\\source\\repos\\hellogreetingapplication\\hellogreetingapplication\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{56EB5281-9AF1-4301-B237-246C731AC975}|HelloGreetingApplication\\HelloGreetingApplication.csproj|solutionrelative:hellogreetingapplication\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HelloGreetingController.cs",
+              "DocumentMoniker": "C:\\Users\\tanya\\source\\repos\\HelloGreetingApplication\\HelloGreetingApplication\\Controllers\\HelloGreetingController.cs",
+              "RelativeDocumentMoniker": "HelloGreetingApplication\\Controllers\\HelloGreetingController.cs",
+              "ToolTip": "C:\\Users\\tanya\\source\\repos\\HelloGreetingApplication\\HelloGreetingApplication\\Controllers\\HelloGreetingController.cs",
+              "RelativeToolTip": "HelloGreetingApplication\\Controllers\\HelloGreetingController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T08:42:06.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\tanya\\source\\repos\\HelloGreetingApplication\\HelloGreetingApplication\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "HelloGreetingApplication\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\tanya\\source\\repos\\HelloGreetingApplication\\HelloGreetingApplication\\appsettings.Development.json",
+              "RelativeToolTip": "HelloGreetingApplication\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-04T08:32:04.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\tanya\\source\\repos\\HelloGreetingApplication\\HelloGreetingApplication\\appsettings.json",
+              "RelativeDocumentMoniker": "HelloGreetingApplication\\appsettings.json",
+              "ToolTip": "C:\\Users\\tanya\\source\\repos\\HelloGreetingApplication\\HelloGreetingApplication\\appsettings.json",
+              "RelativeToolTip": "HelloGreetingApplication\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-04T08:30:19.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\tanya\\source\\repos\\HelloGreetingApplication\\HelloGreetingApplication\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "HelloGreetingApplication\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\tanya\\source\\repos\\HelloGreetingApplication\\HelloGreetingApplication\\Properties\\launchSettings.json",
+              "RelativeToolTip": "HelloGreetingApplication\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-04T08:29:07.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HelloGreetingApplication.csproj",
+              "DocumentMoniker": "C:\\Users\\tanya\\source\\repos\\HelloGreetingApplication\\HelloGreetingApplication\\HelloGreetingApplication.csproj",
+              "RelativeDocumentMoniker": "HelloGreetingApplication\\HelloGreetingApplication.csproj",
+              "ToolTip": "C:\\Users\\tanya\\source\\repos\\HelloGreetingApplication\\HelloGreetingApplication\\HelloGreetingApplication.csproj",
+              "RelativeToolTip": "HelloGreetingApplication\\HelloGreetingApplication.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-04T07:00:01.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\tanya\\source\\repos\\HelloGreetingApplication\\HelloGreetingApplication\\Program.cs",
+              "RelativeDocumentMoniker": "HelloGreetingApplication\\Program.cs",
+              "ToolTip": "C:\\Users\\tanya\\source\\repos\\HelloGreetingApplication\\HelloGreetingApplication\\Program.cs*",
+              "RelativeToolTip": "HelloGreetingApplication\\Program.cs*",
+              "ViewState": "AgIAABgAAAAAAAAAAAAqwCYAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T06:56:46.946Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

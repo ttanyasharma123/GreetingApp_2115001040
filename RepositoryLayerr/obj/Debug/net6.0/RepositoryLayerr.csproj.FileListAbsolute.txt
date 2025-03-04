@@ -1,0 +1,15 @@
+C:\Users\tanya\source\repos\HelloGreetingApplication\RepositoryLayerr\bin\Debug\net6.0\RepositoryLayerr.deps.json
+C:\Users\tanya\source\repos\HelloGreetingApplication\RepositoryLayerr\bin\Debug\net6.0\RepositoryLayerr.dll
+C:\Users\tanya\source\repos\HelloGreetingApplication\RepositoryLayerr\bin\Debug\net6.0\RepositoryLayerr.pdb
+C:\Users\tanya\source\repos\HelloGreetingApplication\RepositoryLayerr\bin\Debug\net6.0\ModelLayerr.dll
+C:\Users\tanya\source\repos\HelloGreetingApplication\RepositoryLayerr\bin\Debug\net6.0\ModelLayerr.pdb
+C:\Users\tanya\source\repos\HelloGreetingApplication\RepositoryLayerr\obj\Debug\net6.0\RepositoryLayerr.csproj.AssemblyReference.cache
+C:\Users\tanya\source\repos\HelloGreetingApplication\RepositoryLayerr\obj\Debug\net6.0\RepositoryLayerr.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tanya\source\repos\HelloGreetingApplication\RepositoryLayerr\obj\Debug\net6.0\RepositoryLayerr.AssemblyInfoInputs.cache
+C:\Users\tanya\source\repos\HelloGreetingApplication\RepositoryLayerr\obj\Debug\net6.0\RepositoryLayerr.AssemblyInfo.cs
+C:\Users\tanya\source\repos\HelloGreetingApplication\RepositoryLayerr\obj\Debug\net6.0\RepositoryLayerr.csproj.CoreCompileInputs.cache
+C:\Users\tanya\source\repos\HelloGreetingApplication\RepositoryLayerr\obj\Debug\net6.0\Reposito.0FF28CCB.Up2Date
+C:\Users\tanya\source\repos\HelloGreetingApplication\RepositoryLayerr\obj\Debug\net6.0\RepositoryLayerr.dll
+C:\Users\tanya\source\repos\HelloGreetingApplication\RepositoryLayerr\obj\Debug\net6.0\refint\RepositoryLayerr.dll
+C:\Users\tanya\source\repos\HelloGreetingApplication\RepositoryLayerr\obj\Debug\net6.0\RepositoryLayerr.pdb
+C:\Users\tanya\source\repos\HelloGreetingApplication\RepositoryLayerr\obj\Debug\net6.0\ref\RepositoryLayerr.dll
