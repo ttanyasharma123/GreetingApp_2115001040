@@ -6,7 +6,7 @@ namespace RepositoryLayerr.Service
 {
     public class GreetingRL : IGreetingRL
     {
-        private static List<string> greetings = new List<string>(); 
+        private static Dictionary<int, string> greetings = new Dictionary<int, string>(); // Store greetings with an ID
 
         public GreetingRL()
         {
@@ -33,18 +33,23 @@ namespace RepositoryLayerr.Service
                 message = "Hello World!";
             }
 
-            SaveGreeting(message); // Save greeting message when generated
+            SaveGreeting(greetings.Count + 1, message); // Assigning a unique ID
             return message;
         }
 
-        public void SaveGreeting(string message)
+        public void SaveGreeting(int id, string message)
         {
-            greetings.Add(message); // Store the greeting message
+            greetings[id] = message; // Store the greeting with its ID
+        }
+
+        public string? FindGreetingById(int id)
+        {
+            return greetings.ContainsKey(id) ? greetings[id] : null;
         }
 
         public List<string> GetAllGreetings()
         {
-            return greetings; // Return all stored greetings
+            return new List<string>(greetings.Values); // Return all stored greetings
         }
     }
 }
