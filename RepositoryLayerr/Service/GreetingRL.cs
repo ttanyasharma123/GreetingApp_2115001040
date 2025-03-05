@@ -6,7 +6,7 @@ namespace RepositoryLayerr.Service
 {
     public class GreetingRL : IGreetingRL
     {
-        private static Dictionary<int, string> greetings = new Dictionary<int, string>(); // Store greetings with an ID
+        private static Dictionary<int, string> greetings = new Dictionary<int, string>();
 
         public GreetingRL()
         {
@@ -33,14 +33,14 @@ namespace RepositoryLayerr.Service
                 message = "Hello World!";
             }
 
-            int newId = greetings.Count + 1; // Generate a new ID
+            int newId = greetings.Count + 1;
             SaveGreeting(newId, message);
             return message;
         }
 
         public void SaveGreeting(int id, string message)
         {
-            if (!greetings.ContainsKey(id)) // Avoid overwriting existing greetings
+            if (!greetings.ContainsKey(id))
             {
                 greetings[id] = message;
             }
@@ -58,6 +58,30 @@ namespace RepositoryLayerr.Service
                 return new List<string> { "No greetings found." };
             }
             return new List<string>(greetings.Values);
+        }
+
+        /// <summary>
+        /// Update an existing greeting message
+        /// </summary>
+        public void UpdateGreeting(int id, string message)
+        {
+            if (greetings.ContainsKey(id))
+            {
+                greetings[id] = message;
+            }
+        }
+
+        /// <summary>
+        /// Delete a greeting message by ID
+        /// </summary>
+        public bool DeleteGreetingById(int id)
+        {
+            if (greetings.ContainsKey(id))
+            {
+                greetings.Remove(id);
+                return true;
+            }
+            return false;
         }
     }
 }
