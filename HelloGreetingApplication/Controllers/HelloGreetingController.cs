@@ -1,45 +1,58 @@
+using BusinessLayerr.Interface;
 using Microsoft.AspNetCore.Mvc;
 using ModelLayerr.Model;
 
-
 namespace HelloGreetingApplication.Controllers
 {
-
     [ApiController]
     [Route("HelloGreetingApplication")]
     public class HelloGreetingController : ControllerBase
     {
+
         private static Dictionary<string, string> _dataStore = new Dictionary<string, string>();
-       [HttpGet]
-        public IActionResult Get() {
-            ResponseModel<string> responseModel = new ResponseModel<string>();
-            responseModel.Message = "Hello to Greeting App API EndPoint";
-            responseModel.Success = true;
-            responseModel.Data = "Hello World!";
-            return Ok(responseModel);
+        private readonly IGreetingBL _greetingBL;
 
-
-
+        public HelloGreetingController(IGreetingBL greetingBL)
+        {
+            _greetingBL = greetingBL;
         }
+
         /// <summary>
-        ///     Get method to get the greeting message
+        /// Get method to return greeting message from Service Layer
         /// </summary>
-        /// <param name="requestModel"></param>
+        /// <returns>Response Model</returns>
+        [HttpGet]
+        public IActionResult Get()
+        {
+            ResponseModel<string> responseModel = new ResponseModel<string>
+            {
+                Message = "Hello to Greeting App API EndPoint",
+                Success = true,
+                Data = _greetingBL.GetGreetingMessage()
+            };
 
-        /// <returns>response model</returns>
-
-
-
-        [HttpPost]
-        public IActionResult Post(RequestModel requestModel) {
-            _dataStore[requestModel.key]= requestModel.value;
-            ResponseModel<string> responseModel = new ResponseModel<string>();
-            responseModel.Success = true;
-            responseModel.Message = "Request received successfully";
-            responseModel.Data = $"Key: {requestModel.key}, Value:{requestModel.value}";
             return Ok(responseModel);
         }
-        
+
+        /// <summary>
+        /// Post method to store key-value pair
+        /// </summary>
+        [HttpPost]
+        public IActionResult Post(RequestModel requestModel)
+        {
+            _dataStore[requestModel.key] = requestModel.value;
+            ResponseModel<string> responseModel = new ResponseModel<string>
+            {
+                Success = true,
+                Message = "Request received successfully",
+                Data = $"Key: {requestModel.key}, Value: {requestModel.value}"
+            };
+            return Ok(responseModel);
+        }
+
+        /// <summary>
+        /// Put method to update data
+        /// </summary>
         [HttpPut]
         public IActionResult Put([FromBody] RequestModel requestModel)
         {
@@ -59,9 +72,10 @@ namespace HelloGreetingApplication.Controllers
             return Ok(responseModel);
         }
 
+        /// <summary>
+        /// Patch method to update a specific key
+        /// </summary>
         [HttpPatch]
-
-
         public IActionResult Patch([FromBody] RequestModel requestModel)
         {
             ResponseModel<string> responseModel = new ResponseModel<string>();
@@ -90,9 +104,10 @@ namespace HelloGreetingApplication.Controllers
             return Ok(responseModel);
         }
 
-
+        /// <summary>
+        /// Delete method to remove a key-value pair
+        /// </summary>
         [HttpDelete]
-
         public IActionResult Delete(string key)
         {
             ResponseModel<string> responseModel = new ResponseModel<string>();
@@ -120,8 +135,5 @@ namespace HelloGreetingApplication.Controllers
 
             return Ok(responseModel);
         }
-
     }
-
-    }
-
+}

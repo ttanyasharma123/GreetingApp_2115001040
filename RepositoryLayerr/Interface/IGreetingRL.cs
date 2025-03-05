@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace RepositoryLayerr.Interface
 {
-    public class  IGreetingRL
+    public interface IGreetingRL
     {
+        string GetGreetingMessage();
     }
 }

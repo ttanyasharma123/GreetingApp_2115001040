@@ -7,8 +7,15 @@ using RepositoryLayerr.Interface;
 
 namespace RepositoryLayerr.Service
 {
-    public class GreetingRL:IGreetingRL
+    public class GreetingRL : IGreetingRL
     {
+        public GreetingRL()
+        {
 
+        }
+        public string GetGreetingMessage()
+        {
+            return "Hello World";
+        }
     }
 }

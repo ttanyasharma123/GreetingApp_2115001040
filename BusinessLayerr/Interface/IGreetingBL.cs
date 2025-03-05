@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace BusinessLayerr.Interface
 {
-    public  interface IGreetingBL
+    public interface IGreetingBL
     {
-        string GetGreeting();
+        string GetGreetingMessage();
     }
 }
