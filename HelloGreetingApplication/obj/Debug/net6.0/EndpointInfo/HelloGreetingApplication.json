@@ -5,7 +5,66 @@
     "version": "1.0"
   },
   "paths": {
-    "/HelloGreetingApplication": {
+    "/HelloGreetingApplication/greet": {
+      "get": {
+        "tags": [
+          "HelloGreeting"
+        ],
+        "parameters": [
+          {
+            "name": "firstName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "lastName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/HelloGreetingApplication/saveGreeting": {
+      "post": {
+        "tags": [
+          "HelloGreeting"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/HelloGreetingApplication/getAllGreetings": {
       "get": {
         "tags": [
           "HelloGreeting"
@@ -15,7 +74,9 @@
             "description": "OK"
           }
         }
-      },
+      }
+    },
+    "/HelloGreetingApplication": {
       "post": {
         "tags": [
           "HelloGreeting"

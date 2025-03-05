@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ModelLayerr")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+779805f51393b902b1cbc8d60c6cec39a6757e16")]
 [assembly: System.Reflection.AssemblyProductAttribute("ModelLayerr")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ModelLayerr")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

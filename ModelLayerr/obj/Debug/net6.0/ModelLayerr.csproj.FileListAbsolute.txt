@@ -10,3 +10,16 @@ C:\Users\tanya\source\repos\HelloGreetingApplication\ModelLayerr\obj\Debug\net6.
 C:\Users\tanya\source\repos\HelloGreetingApplication\ModelLayerr\obj\Debug\net6.0\refint\ModelLayerr.dll
 C:\Users\tanya\source\repos\HelloGreetingApplication\ModelLayerr\obj\Debug\net6.0\ModelLayerr.pdb
 C:\Users\tanya\source\repos\HelloGreetingApplication\ModelLayerr\obj\Debug\net6.0\ref\ModelLayerr.dll
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\ModelLayerr\bin\Debug\net6.0\ModelLayerr.deps.json
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\ModelLayerr\bin\Debug\net6.0\ModelLayerr.dll
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\ModelLayerr\bin\Debug\net6.0\ModelLayerr.pdb
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\ModelLayerr\obj\Debug\net6.0\ModelLayerr.csproj.AssemblyReference.cache
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\ModelLayerr\obj\Debug\net6.0\ModelLayerr.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\ModelLayerr\obj\Debug\net6.0\ModelLayerr.AssemblyInfoInputs.cache
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\ModelLayerr\obj\Debug\net6.0\ModelLayerr.AssemblyInfo.cs
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\ModelLayerr\obj\Debug\net6.0\ModelLayerr.csproj.CoreCompileInputs.cache
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\ModelLayerr\obj\Debug\net6.0\ModelLayerr.sourcelink.json
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\ModelLayerr\obj\Debug\net6.0\ModelLayerr.dll
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\ModelLayerr\obj\Debug\net6.0\refint\ModelLayerr.dll
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\ModelLayerr\obj\Debug\net6.0\ModelLayerr.pdb
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\ModelLayerr\obj\Debug\net6.0\ref\ModelLayerr.dll
