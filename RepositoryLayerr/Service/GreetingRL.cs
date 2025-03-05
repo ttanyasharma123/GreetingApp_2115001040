@@ -33,13 +33,17 @@ namespace RepositoryLayerr.Service
                 message = "Hello World!";
             }
 
-            SaveGreeting(greetings.Count + 1, message); // Assigning a unique ID
+            int newId = greetings.Count + 1; // Generate a new ID
+            SaveGreeting(newId, message);
             return message;
         }
 
         public void SaveGreeting(int id, string message)
         {
-            greetings[id] = message; // Store the greeting with its ID
+            if (!greetings.ContainsKey(id)) // Avoid overwriting existing greetings
+            {
+                greetings[id] = message;
+            }
         }
 
         public string? FindGreetingById(int id)
@@ -49,7 +53,11 @@ namespace RepositoryLayerr.Service
 
         public List<string> GetAllGreetings()
         {
-            return new List<string>(greetings.Values); // Return all stored greetings
+            if (greetings.Count == 0)
+            {
+                return new List<string> { "No greetings found." };
+            }
+            return new List<string>(greetings.Values);
         }
     }
 }
