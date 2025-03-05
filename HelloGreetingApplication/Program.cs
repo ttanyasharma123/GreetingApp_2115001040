@@ -47,5 +47,5 @@ catch (Exception ex)
 }
 finally
 {
-    NLog.LogManager.Shutdown(); // Ensure logs are flushed before application shutdown
+    NLog.LogManager.Shutdown();
 }

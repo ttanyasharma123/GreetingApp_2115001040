@@ -19,9 +19,14 @@ namespace BusinessLayerr.Service
             return _greetingRL.GetGreetingMessage(firstName, lastName);
         }
 
-        public void SaveGreeting(string message)
+        public void SaveGreeting(int id, string message)
         {
-            _greetingRL.SaveGreeting(message);
+            _greetingRL.SaveGreeting(id, message); 
+        }
+
+        public string? FindGreetingById(int id)
+        {
+            return _greetingRL.FindGreetingById(id); 
         }
 
         public List<string> GetAllGreetings()

@@ -26,23 +26,44 @@ namespace HelloGreetingApplication.Controllers
         {
             string message = _greetingBL.GetGreetingMessage(firstName, lastName);
 
-            ResponseModel<string> responseModel = new ResponseModel<string>
+            return Ok(new ResponseModel<string>
             {
                 Success = true,
                 Message = "Greeting message retrieved successfully",
                 Data = message
-            };
-
-            return Ok(responseModel);
+            });
         }
 
         /// <summary>
-        /// Post method to save a greeting message
+        /// Get method to retrieve a greeting message by ID
+        /// </summary>
+        [HttpGet("getGreetingById/{id}")]
+        public IActionResult GetGreetingById(int id)
+        {
+            var message = _greetingBL.FindGreetingById(id);
+            if (message != null)
+            {
+                return Ok(new ResponseModel<string>
+                {
+                    Success = true,
+                    Message = "Greeting message retrieved successfully",
+                    Data = message
+                });
+            }
+            return NotFound(new ResponseModel<string>
+            {
+                Success = false,
+                Message = "Greeting not found"
+            });
+        }
+
+        /// <summary>
+        /// Post method to save a greeting message with an ID
         /// </summary>
         [HttpPost("saveGreeting")]
-        public IActionResult SaveGreeting([FromBody] string message)
+        public IActionResult SaveGreeting([FromBody] GreetingRequest request)
         {
-            if (string.IsNullOrWhiteSpace(message))
+            if (string.IsNullOrWhiteSpace(request.Message))
             {
                 return BadRequest(new ResponseModel<string>
                 {
@@ -51,13 +72,13 @@ namespace HelloGreetingApplication.Controllers
                 });
             }
 
-            _greetingBL.SaveGreeting(message);
+            _greetingBL.SaveGreeting(request.Id, request.Message);
 
             return Ok(new ResponseModel<string>
             {
                 Success = true,
                 Message = "Greeting saved successfully!",
-                Data = message
+                Data = request.Message
             });
         }
 
@@ -76,111 +97,14 @@ namespace HelloGreetingApplication.Controllers
                 Data = greetings
             });
         }
+    }
 
-        /// <summary>
-        /// Post method to store key-value pair
-        /// </summary>
-        [HttpPost]
-        public IActionResult Post(RequestModel requestModel)
-        {
-            _dataStore[requestModel.key] = requestModel.value;
-            return Ok(new ResponseModel<string>
-            {
-                Success = true,
-                Message = "Request received successfully",
-                Data = $"Key: {requestModel.key}, Value: {requestModel.value}"
-            });
-        }
-
-        /// <summary>
-        /// Put method to update data
-        /// </summary>
-        [HttpPut]
-        public IActionResult Put([FromBody] RequestModel requestModel)
-        {
-            if (requestModel == null || string.IsNullOrEmpty(requestModel.key))
-            {
-                return BadRequest(new ResponseModel<string>
-                {
-                    Success = false,
-                    Message = "Invalid request data"
-                });
-            }
-
-            return Ok(new ResponseModel<string>
-            {
-                Success = true,
-                Message = "Data updated successfully",
-                Data = $"Key: {requestModel.key}, Value: {requestModel.value}"
-            });
-        }
-
-        /// <summary>
-        /// Patch method to update a specific key
-        /// </summary>
-        [HttpPatch]
-        public IActionResult Patch([FromBody] RequestModel requestModel)
-        {
-            if (requestModel == null || string.IsNullOrEmpty(requestModel.key))
-            {
-                return BadRequest(new ResponseModel<string>
-                {
-                    Success = false,
-                    Message = "Invalid request data"
-                });
-            }
-
-            if (!_dataStore.ContainsKey(requestModel.key))
-            {
-                return NotFound(new ResponseModel<string>
-                {
-                    Success = false,
-                    Message = "Key not found"
-                });
-            }
-
-            _dataStore[requestModel.key] = requestModel.value;
-
-            return Ok(new ResponseModel<string>
-            {
-                Success = true,
-                Message = "Data updated successfully",
-                Data = $"Key: {requestModel.key}, Value: {requestModel.value}"
-            });
-        }
-
-        /// <summary>
-        /// Delete method to remove a key-value pair
-        /// </summary>
-        [HttpDelete]
-        public IActionResult Delete(string key)
-        {
-            if (string.IsNullOrEmpty(key))
-            {
-                return BadRequest(new ResponseModel<string>
-                {
-                    Success = false,
-                    Message = "Invalid request data"
-                });
-            }
-
-            if (!_dataStore.ContainsKey(key))
-            {
-                return NotFound(new ResponseModel<string>
-                {
-                    Success = false,
-                    Message = "Key not found"
-                });
-            }
-
-            _dataStore.Remove(key);
-
-            return Ok(new ResponseModel<string>
-            {
-                Success = true,
-                Message = "Data deleted successfully",
-                Data = $"Deleted Key: {key}"
-            });
-        }
+    /// <summary>
+    /// DTO for saving a greeting
+    /// </summary>
+    public class GreetingRequest
+    {
+        public int Id { get; set; }
+        public string Message { get; set; }
     }
 }
