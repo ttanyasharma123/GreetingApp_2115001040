@@ -9,5 +9,7 @@ namespace RepositoryLayerr.Interface
     public interface IGreetingRL
     {
         string GetGreetingMessage(string? firstName, string? lastName);
+        void SaveGreeting(string message);  
+        List<string> GetAllGreetings();
     }
 }

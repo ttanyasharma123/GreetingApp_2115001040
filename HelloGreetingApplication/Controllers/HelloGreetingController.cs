@@ -1,6 +1,7 @@
 using BusinessLayerr.Interface;
 using Microsoft.AspNetCore.Mvc;
 using ModelLayerr.Model;
+using System.Collections.Generic;
 
 namespace HelloGreetingApplication.Controllers
 {
@@ -23,14 +24,57 @@ namespace HelloGreetingApplication.Controllers
         [HttpGet("greet")]
         public IActionResult GetGreeting([FromQuery] string? firstName, [FromQuery] string? lastName)
         {
+            string message = _greetingBL.GetGreetingMessage(firstName, lastName);
+
             ResponseModel<string> responseModel = new ResponseModel<string>
             {
                 Success = true,
                 Message = "Greeting message retrieved successfully",
-                Data = _greetingBL.GetGreetingMessage(firstName, lastName)
+                Data = message
             };
 
             return Ok(responseModel);
+        }
+
+        /// <summary>
+        /// Post method to save a greeting message
+        /// </summary>
+        [HttpPost("saveGreeting")]
+        public IActionResult SaveGreeting([FromBody] string message)
+        {
+            if (string.IsNullOrWhiteSpace(message))
+            {
+                return BadRequest(new ResponseModel<string>
+                {
+                    Success = false,
+                    Message = "Greeting message cannot be empty"
+                });
+            }
+
+            _greetingBL.SaveGreeting(message);
+
+            return Ok(new ResponseModel<string>
+            {
+                Success = true,
+                Message = "Greeting saved successfully!",
+                Data = message
+            });
+        }
+
+        /// <summary>
+        /// Get all saved greeting messages
+        /// </summary>
+        [HttpGet("getAllGreetings")]
+        public IActionResult GetAllGreetings()
+        {
+            var greetings = _greetingBL.GetAllGreetings();
+
+            return Ok(new ResponseModel<List<string>>
+            {
+                Success = true,
+                Message = "All greetings retrieved successfully",
+                Data = greetings
+            });
         }
 
         /// <summary>
@@ -40,13 +84,12 @@ namespace HelloGreetingApplication.Controllers
         public IActionResult Post(RequestModel requestModel)
         {
             _dataStore[requestModel.key] = requestModel.value;
-            ResponseModel<string> responseModel = new ResponseModel<string>
+            return Ok(new ResponseModel<string>
             {
                 Success = true,
                 Message = "Request received successfully",
                 Data = $"Key: {requestModel.key}, Value: {requestModel.value}"
-            };
-            return Ok(responseModel);
+            });
         }
 
         /// <summary>
@@ -55,20 +98,21 @@ namespace HelloGreetingApplication.Controllers
         [HttpPut]
         public IActionResult Put([FromBody] RequestModel requestModel)
         {
-            ResponseModel<string> responseModel = new ResponseModel<string>();
-
             if (requestModel == null || string.IsNullOrEmpty(requestModel.key))
             {
-                responseModel.Success = false;
-                responseModel.Message = "Invalid request data";
-                return BadRequest(responseModel);
+                return BadRequest(new ResponseModel<string>
+                {
+                    Success = false,
+                    Message = "Invalid request data"
+                });
             }
 
-            responseModel.Success = true;
-            responseModel.Message = "Data updated successfully";
-            responseModel.Data = $"Key: {requestModel.key}, Value: {requestModel.value}";
-
-            return Ok(responseModel);
+            return Ok(new ResponseModel<string>
+            {
+                Success = true,
+                Message = "Data updated successfully",
+                Data = $"Key: {requestModel.key}, Value: {requestModel.value}"
+            });
         }
 
         /// <summary>
@@ -77,30 +121,32 @@ namespace HelloGreetingApplication.Controllers
         [HttpPatch]
         public IActionResult Patch([FromBody] RequestModel requestModel)
         {
-            ResponseModel<string> responseModel = new ResponseModel<string>();
-
             if (requestModel == null || string.IsNullOrEmpty(requestModel.key))
             {
-                responseModel.Success = false;
-                responseModel.Message = "Invalid request data";
-                return BadRequest(responseModel);
+                return BadRequest(new ResponseModel<string>
+                {
+                    Success = false,
+                    Message = "Invalid request data"
+                });
             }
 
             if (!_dataStore.ContainsKey(requestModel.key))
             {
-                responseModel.Success = false;
-                responseModel.Message = "Key not found";
-                return NotFound(responseModel);
+                return NotFound(new ResponseModel<string>
+                {
+                    Success = false,
+                    Message = "Key not found"
+                });
             }
 
-            // Update the value for the given key
             _dataStore[requestModel.key] = requestModel.value;
 
-            responseModel.Success = true;
-            responseModel.Message = "Data updated successfully";
-            responseModel.Data = $"Key: {requestModel.key}, Value: {requestModel.value}";
-
-            return Ok(responseModel);
+            return Ok(new ResponseModel<string>
+            {
+                Success = true,
+                Message = "Data updated successfully",
+                Data = $"Key: {requestModel.key}, Value: {requestModel.value}"
+            });
         }
 
         /// <summary>
@@ -109,30 +155,32 @@ namespace HelloGreetingApplication.Controllers
         [HttpDelete]
         public IActionResult Delete(string key)
         {
-            ResponseModel<string> responseModel = new ResponseModel<string>();
-
             if (string.IsNullOrEmpty(key))
             {
-                responseModel.Success = false;
-                responseModel.Message = "Invalid request data";
-                return BadRequest(responseModel);
+                return BadRequest(new ResponseModel<string>
+                {
+                    Success = false,
+                    Message = "Invalid request data"
+                });
             }
 
             if (!_dataStore.ContainsKey(key))
             {
-                responseModel.Success = false;
-                responseModel.Message = "Key not found";
-                return NotFound(responseModel);
+                return NotFound(new ResponseModel<string>
+                {
+                    Success = false,
+                    Message = "Key not found"
+                });
             }
 
-            // Remove the key-value pair
             _dataStore.Remove(key);
 
-            responseModel.Success = true;
-            responseModel.Message = "Data deleted successfully";
-            responseModel.Data = $"Deleted Key: {key}";
-
-            return Ok(responseModel);
+            return Ok(new ResponseModel<string>
+            {
+                Success = true,
+                Message = "Data deleted successfully",
+                Data = $"Deleted Key: {key}"
+            });
         }
     }
 }

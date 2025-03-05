@@ -171,11 +171,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tanya\\source\\repos\\HelloGreetingApplication\\BusinessLayerr\\BusinessLayerr.csproj",
+      "projectUniqueName": "C:\\Users\\tanya\\OneDrive\\Documents\\GreetingAppProject\\BusinessLayerr\\BusinessLayerr.csproj",
       "projectName": "BusinessLayerr",
-      "projectPath": "C:\\Users\\tanya\\source\\repos\\HelloGreetingApplication\\BusinessLayerr\\BusinessLayerr.csproj",
+      "projectPath": "C:\\Users\\tanya\\OneDrive\\Documents\\GreetingAppProject\\BusinessLayerr\\BusinessLayerr.csproj",
       "packagesPath": "C:\\Users\\tanya\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tanya\\source\\repos\\HelloGreetingApplication\\BusinessLayerr\\obj\\",
+      "outputPath": "C:\\Users\\tanya\\OneDrive\\Documents\\GreetingAppProject\\BusinessLayerr\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -196,11 +196,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\tanya\\source\\repos\\HelloGreetingApplication\\ModelLayerr\\ModelLayerr.csproj": {
-              "projectPath": "C:\\Users\\tanya\\source\\repos\\HelloGreetingApplication\\ModelLayerr\\ModelLayerr.csproj"
+            "C:\\Users\\tanya\\OneDrive\\Documents\\GreetingAppProject\\ModelLayerr\\ModelLayerr.csproj": {
+              "projectPath": "C:\\Users\\tanya\\OneDrive\\Documents\\GreetingAppProject\\ModelLayerr\\ModelLayerr.csproj"
             },
-            "C:\\Users\\tanya\\source\\repos\\HelloGreetingApplication\\RepositoryLayerr\\RepositoryLayerr.csproj": {
-              "projectPath": "C:\\Users\\tanya\\source\\repos\\HelloGreetingApplication\\RepositoryLayerr\\RepositoryLayerr.csproj"
+            "C:\\Users\\tanya\\OneDrive\\Documents\\GreetingAppProject\\RepositoryLayerr\\RepositoryLayerr.csproj": {
+              "projectPath": "C:\\Users\\tanya\\OneDrive\\Documents\\GreetingAppProject\\RepositoryLayerr\\RepositoryLayerr.csproj"
             }
           }
         }

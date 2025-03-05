@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using BusinessLayerr.Interface;
 using RepositoryLayerr.Interface;
 
@@ -16,6 +17,16 @@ namespace BusinessLayerr.Service
         public string GetGreetingMessage(string? firstName, string? lastName)
         {
             return _greetingRL.GetGreetingMessage(firstName, lastName);
+        }
+
+        public void SaveGreeting(string message)
+        {
+            _greetingRL.SaveGreeting(message);
+        }
+
+        public List<string> GetAllGreetings()
+        {
+            return _greetingRL.GetAllGreetings();
         }
     }
 }
