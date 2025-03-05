@@ -9,7 +9,6 @@ namespace HelloGreetingApplication.Controllers
     [Route("HelloGreetingApplication")]
     public class HelloGreetingController : ControllerBase
     {
-        private static Dictionary<int, string> _dataStore = new Dictionary<int, string>(); // Changed key to int
         private readonly IGreetingBL _greetingBL;
 
         public HelloGreetingController(IGreetingBL greetingBL)
@@ -96,8 +95,17 @@ namespace HelloGreetingApplication.Controllers
                 });
             }
 
-            var existingGreeting = _greetingBL.FindGreetingById(id);
-            if (existingGreeting == null)
+            try
+            {
+                _greetingBL.UpdateGreeting(id, request.Message);
+                return Ok(new ResponseModel<string>
+                {
+                    Success = true,
+                    Message = "Greeting updated successfully",
+                    Data = request.Message
+                });
+            }
+            catch (KeyNotFoundException)
             {
                 return NotFound(new ResponseModel<string>
                 {
@@ -105,15 +113,6 @@ namespace HelloGreetingApplication.Controllers
                     Message = "Greeting not found"
                 });
             }
-
-            _greetingBL.SaveGreeting(id, request.Message); // Update greeting
-
-            return Ok(new ResponseModel<string>
-            {
-                Success = true,
-                Message = "Greeting updated successfully",
-                Data = request.Message
-            });
         }
 
         /// <summary>
@@ -131,8 +130,17 @@ namespace HelloGreetingApplication.Controllers
                 });
             }
 
-            var existingGreeting = _greetingBL.FindGreetingById(id);
-            if (existingGreeting == null)
+            try
+            {
+                _greetingBL.UpdateGreeting(id, request.Message);
+                return Ok(new ResponseModel<string>
+                {
+                    Success = true,
+                    Message = "Greeting partially updated successfully",
+                    Data = request.Message
+                });
+            }
+            catch (KeyNotFoundException)
             {
                 return NotFound(new ResponseModel<string>
                 {
@@ -140,19 +148,10 @@ namespace HelloGreetingApplication.Controllers
                     Message = "Greeting not found"
                 });
             }
-
-            _greetingBL.SaveGreeting(id, request.Message); // Update greeting
-
-            return Ok(new ResponseModel<string>
-            {
-                Success = true,
-                Message = "Greeting partially updated successfully",
-                Data = request.Message
-            });
         }
 
         /// <summary>
-        /// Delete method to remove a greeting message by ID
+        /// Delete method to remove a greeting message by ID (UC8)
         /// </summary>
         [HttpDelete("deleteGreeting/{id}")]
         public IActionResult DeleteGreeting(int id)
@@ -167,7 +166,7 @@ namespace HelloGreetingApplication.Controllers
                 });
             }
 
-            _dataStore.Remove(id); // Remove greeting from dictionary
+            _greetingBL.DeleteGreeting(id); // Delete from repository
 
             return Ok(new ResponseModel<string>
             {
