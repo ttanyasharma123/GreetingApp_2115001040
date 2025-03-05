@@ -8,7 +8,6 @@ namespace HelloGreetingApplication.Controllers
     [Route("HelloGreetingApplication")]
     public class HelloGreetingController : ControllerBase
     {
-
         private static Dictionary<string, string> _dataStore = new Dictionary<string, string>();
         private readonly IGreetingBL _greetingBL;
 
@@ -21,14 +20,14 @@ namespace HelloGreetingApplication.Controllers
         /// Get method to return greeting message from Service Layer
         /// </summary>
         /// <returns>Response Model</returns>
-        [HttpGet]
-        public IActionResult Get()
+        [HttpGet("greet")]
+        public IActionResult GetGreeting([FromQuery] string? firstName, [FromQuery] string? lastName)
         {
             ResponseModel<string> responseModel = new ResponseModel<string>
             {
-                Message = "Hello to Greeting App API EndPoint",
                 Success = true,
-                Data = _greetingBL.GetGreetingMessage()
+                Message = "Greeting message retrieved successfully",
+                Data = _greetingBL.GetGreetingMessage(firstName, lastName)
             };
 
             return Ok(responseModel);

@@ -8,6 +8,6 @@ namespace RepositoryLayerr.Interface
 {
     public interface IGreetingRL
     {
-        string GetGreetingMessage();
+        string GetGreetingMessage(string? firstName, string? lastName);
     }
 }
