@@ -1,0 +1,13 @@
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\Middleware Layer\obj\Debug\net6.0\Middleware Layer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\Middleware Layer\obj\Debug\net6.0\Middleware Layer.AssemblyInfoInputs.cache
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\Middleware Layer\obj\Debug\net6.0\Middleware Layer.AssemblyInfo.cs
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\Middleware Layer\obj\Debug\net6.0\Middleware Layer.csproj.CoreCompileInputs.cache
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\Middleware Layer\obj\Debug\net6.0\Middleware Layer.sourcelink.json
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\Middleware Layer\bin\Debug\net6.0\Middleware Layer.deps.json
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\Middleware Layer\bin\Debug\net6.0\Middleware Layer.dll
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\Middleware Layer\bin\Debug\net6.0\Middleware Layer.pdb
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\Middleware Layer\obj\Debug\net6.0\Middleware Layer.csproj.AssemblyReference.cache
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\Middleware Layer\obj\Debug\net6.0\Middleware Layer.dll
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\Middleware Layer\obj\Debug\net6.0\refint\Middleware Layer.dll
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\Middleware Layer\obj\Debug\net6.0\Middleware Layer.pdb
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\Middleware Layer\obj\Debug\net6.0\ref\Middleware Layer.dll
