@@ -80,6 +80,36 @@
   },
   {
     "ContainingType": "HelloGreetingApplication.Controllers.HelloGreetingController",
+    "Method": "ThrowGenericException",
+    "RelativePath": "HelloGreetingApplication/throwGeneric",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HelloGreetingApplication.Controllers.HelloGreetingController",
+    "Method": "ThrowNonSerializableException",
+    "RelativePath": "HelloGreetingApplication/throwNonSerializable",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HelloGreetingApplication.Controllers.HelloGreetingController",
+    "Method": "ThrowSerializableException",
+    "RelativePath": "HelloGreetingApplication/throwSerializable",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HelloGreetingApplication.Controllers.HelloGreetingController",
     "Method": "UpdateGreeting",
     "RelativePath": "HelloGreetingApplication/updateGreeting/{id}",
     "HttpMethod": "PUT",

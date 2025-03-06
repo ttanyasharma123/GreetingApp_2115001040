@@ -22,7 +22,7 @@
 	<ItemGroup>
 		<!-- Reference Business Layer Project -->
 		<ProjectReference Include="..\BusinessLayerr\BusinessLayerr.csproj" />
-		<ProjectReference Include="..\RepositoryLayerr\RepositoryLayerr.csproj" />
+		<ProjectReference Include="..\Middleware Layer\Middleware Layer.csproj" />
 	</ItemGroup>
 
 </Project>

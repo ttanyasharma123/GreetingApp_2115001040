@@ -91,3 +91,21 @@ C:\Users\tanya\OneDrive\Documents\GreetingAppProject\HelloGreetingApplication\ob
 C:\Users\tanya\OneDrive\Documents\GreetingAppProject\HelloGreetingApplication\obj\Debug\net6.0\HelloGre.BED6AAB5.Up2Date
 C:\Users\tanya\OneDrive\Documents\GreetingAppProject\HelloGreetingApplication\obj\Debug\net6.0\HelloGreetingApplication.genruntimeconfig.cache
 C:\Users\tanya\OneDrive\Documents\GreetingAppProject\HelloGreetingApplication\obj\Debug\net6.0\ref\HelloGreetingApplication.dll
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\HelloGreetingApplication\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\HelloGreetingApplication\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\HelloGreetingApplication\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\HelloGreetingApplication\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\HelloGreetingApplication\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\HelloGreetingApplication\bin\Debug\net6.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\HelloGreetingApplication\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\HelloGreetingApplication\bin\Debug\net6.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\HelloGreetingApplication\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\HelloGreetingApplication\bin\Debug\net6.0\Microsoft.Extensions.ObjectPool.dll
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\HelloGreetingApplication\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\HelloGreetingApplication\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\HelloGreetingApplication\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\HelloGreetingApplication\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\HelloGreetingApplication\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\HelloGreetingApplication\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\HelloGreetingApplication\bin\Debug\net6.0\Middleware Layer.dll
+C:\Users\tanya\OneDrive\Documents\GreetingAppProject\HelloGreetingApplication\bin\Debug\net6.0\Middleware Layer.pdb
